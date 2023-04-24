@@ -1,0 +1,53 @@
+nav {
+
+}
+#quote {
+position: absolute;
+    left: 9.86%;
+right: 31.6%;
+top: 11.33%;
+bottom: 69.92%;
+}
+#engine {
+border-radius: 50px 0px 0px 50px;
+}
+#cc {
+position: absolute;
+    left: 9.86%;
+right: 18.47%;
+top: 74.61%;
+bottom: 16.02%;
+}
+card {
+    position: absolute;
+width: 1530.67px;
+height: 859.19px;
+left: 194.67px;
+top: 109.69px;
+}
+#h {
+    position: absolute;
+left: 72.97%;
+right: 23.44%;
+top: 37.04%;
+bottom: 36.11%;
+}
+#e {
+    position: absolute;
+left: 82.55%;
+right: 13.23%;
+top: 37.04%;
+bottom: 36.11%;
+}
+#f {
+    position: absolute;
+left: 91.88%;
+right: 2.76%;
+top: 37.04%;
+bottom: 36.11%;
+}
+#navimg {
+    position: absolute;
+left: 2%;
+
+}
