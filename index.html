@@ -10,17 +10,17 @@
         <script>document.documentElement.classList.add('js')</script>
         <title>R7 Redesign by @tristanozaa</title>
     </head>
-<body class="text-white overflow-hidden flex flex-row">
+<body class="text-white overflow-hidden flex flex-row scroll-smooth">
     <div id="main" class="relative overflow-y-auto w-full h-screen overflow-x-hidden snap-y snap-mandatory"> 
-        <section  class="relative h-screen bg-[url('img/front.jpeg')] bg-center bg-cover grid snap-center">
+        <section id="home" class="relative h-screen bg-[url('img/front.jpeg')] bg-center bg-cover grid snap-center">
         </section>
-        <section class="bg-[#000000] relative h-screen snap-center grid item">
+        <section id="eng" class="bg-[#000000] relative h-screen snap-center grid">
             <img id="engine" alt="engine" class="object-cover w-4/5 h-3/5 self-center right-0 absolute" src="img/engine.webp">
             <h1 id="quote" class="font-bold text-8xl w-1/2">Semakin di depan dengan Yamaha!</h1>
             <h1 id="cc" class="font-bold text-8xl">689cc, 2 silinder.</h1>
         </section>
         
-        <section id="card" class="bg-[#161617] h-screen w-screen relative grid grid-cols-3 grid gap-7 snap-center px-48 py-28">
+        <section id="features" class="bg-[#161617] h-screen w-screen relative grid grid-cols-3 grid gap-7 snap-center px-48 py-28">
             <div class="rounded-3xl bg-[url('img/speedometer.webp')] hover:scale-105 duration-150 ease-in-out col-span-2 bg-center bg-cover grid items-center"><h1 class="font-bold text-5xl text-center">Speedometer</h1></div>
             <div class="rounded-3xl bg-[url('img/rw.webp')] hover:scale-105 duration-150 ease-in-out bg-center bg-cover grid items-center"><h1 class="font-bold text-5xl text-center self-center">Rear<br> Wheel</h1></div>
             <div class="rounded-3xl bg-[url('img/design.webp')] hover:scale-105 duration-150 ease-in-out row-span-2 bg-center bg-cover grid items-center"><h1 class="font-bold text-5xl text-center">Sleek<br> Design</h1></div>
@@ -28,12 +28,37 @@
             <div class="rounded-3xl bg-[url('img/fw.webp')] hover:scale-105 duration-150 ease-in-out col-span-2 bg-center bg-cover grid items-center"><h1 class="font-bold text-5xl text-center">Front<br> Wheel</h1></div>
         </section>
 
+        <footer class="bg-[#000000] relative h-1/2 snap-center pt-24 px-48 ">
+            <a class="flex flex-row" href="https://github.com/tristanozaa"><img src="img/github.ico" class="w-12 h-12"><h1 class="ml-5 text-4xl font-bold">GitHub</h1></a>
+        </footer>
+        
     </div>
     <nav class="fixed bg-transparent w-screen h-24 inline text-2xl">
-        <img id="navimg" class="h-full" src="img/nav.png">
-        <h1 id="h" class="ml-20" >Home</h1>
-        <h1 id="e" class="ml-10">Engine</h1>
-        <h1 id="f">Features</h1>
+        <div><a href="https://github.com/tristanozaa"><img id="navimg" class="h-full m-2 hover:scale-105 duration-150 ease-in-out" src="img/nav.png"></a></div>
+        <div class="float-right flex">
+        <a href="#home" id="h" class="p-10  hover:scale-150 duration-150 ease-in-out">Home</a>
+        <a href="#engine" id="e" class="p-10 hover:scale-150 duration-150 ease-in-out">Engine</a>
+        <a href="#features" id="f" class="p-10 pr-20 mt hover:scale-150 duration-150 ease-in-out">Features</a>
+        </div>
     </nav>
+
+    <script>
+        document.querySelector('#e').addEventListener('click', function(event) {
+          event.preventDefault();
+          document.querySelector('#engine').scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
+          <script>
+            document.querySelector('#h').addEventListener('click', function(event) {
+              event.preventDefault();
+              document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+            });
+          </script>
+              <script>
+                document.querySelector('#f').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.querySelector('#features').scrollIntoView({ behavior: 'smooth' });
+                });
+              </script>
 </body>
 </html> 
